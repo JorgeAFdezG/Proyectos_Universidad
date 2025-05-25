@@ -1,0 +1,405 @@
+/*Css de subir archivos*/
+.containaerSeendArchive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  gap: 20px;
+}
+.divContentAreaSelected {
+  width: 90%;
+}
+.upload-area {
+  border: 2px dashed #0d6efd;
+  background-color: #e7f1ff;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 300px;
+}
+.upload-area label {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.upload-area.dragover {
+  background-color: #d0e6ff;
+  border-color: #0a58ca;
+}
+.upload-area:hover {
+  background-color: #d0e6ff;
+}
+/* Termina el css de subir archivos*/
+/* Tabla css */
+.table-profesional {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table-profesional thead {
+  background-color: #0042a5; /* color bootstrap primary */
+  color: white;
+  font-weight: bold;
+}
+.table-profesional th,
+.table-profesional td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.table-profesional tbody tr:hover {
+  background-color: #f1f5ff;
+}
+.table-profesional tbody tr:last-child td {
+  border-bottom: none;
+}
+.btn-accion {
+  display: flex;
+  gap: 10px; /* separa los botones automáticamente */
+  flex-wrap: wrap; /* evita sobreposición en pantallas pequeñas */
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  margin-right: 8px; /* <- Esto separa los botones en línea */
+}
+.btn-descargar {
+  background-color: #1a58a0; /* verde bootstrap */
+}
+
+.btn-descargar:hover {
+  background-color: #0077ff;
+}
+.btn-eliminar {
+  background-color: #e3081e; /* rojo bootstrap */
+  margin-top: 10px;
+}
+.btn-eliminar:hover {
+  background-color: #ff0019;
+}
+/* Contenedor paginación */
+.paginacion {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+.paginacion button {
+  background-color: #0042a5;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.paginacion button:hover {
+  background-color: #0042a5;
+}
+.paginacion button:disabled {
+  background-color: #a6c8ff;
+  cursor: default;
+}
+/*Termina css de la tabla*/
+/*css de barra de busqueda y de mostrar elementos*/
+.controles-tabla {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#inputBuscar {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+#inputBuscar:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+/* Termina css de barra de busqueda y de mostrar elementos*/
+.rectagleRightFloating {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  border-radius: 30px;
+  display: flex;
+  z-index: 10;
+  right: 10px;
+  top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.rectagleLeftFloating {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  border-radius: 30px;
+  display: flex;
+  z-index: 10;
+  left: 10px;
+  top: 180px;
+  justify-content: center;
+  align-items: center;
+}
+.circleRightFloating {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 30px;
+  display: flex;
+  z-index: 10;
+  right: 20px;
+  top: 250px;
+  justify-content: center;
+  align-items: center;
+}
+.circleLeftFloating {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 30px;
+  display: flex;
+  z-index: 10;
+  left: 20px;
+  top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+/*Contenido de circulo imagen*/
+.contentCircleImage {
+  background-color: #ffa1a1;
+  width:42px;
+  height: 42px;
+  border-radius: 21px;
+  color: #fd0d0da7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentCircleImage svg {
+  width: 80%;
+  height: 80%;
+}
+.contentRetangleImage {
+  background-color: #ffa1a163;
+  width: 145px;
+  height: 42px;
+  border-radius: 21px;
+  margin-left: 5px;
+  position: relative;
+  overflow: hidden;
+}
+/* Agrega el brillo tipo skeleton */
+.contentRetangleImage::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: skeleton-loading 1.5s infinite;
+}
+/* Animación */
+@keyframes skeleton-loading {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/*Contenido de circulo Documentos*/
+.contentCircleDocuments {
+  background-color: #ffd6a1;
+  width:42px;
+  height: 42px;
+  border-radius: 21px;
+  color: #fda90def;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentCircleDocuments svg {
+  width: 80%;
+  height: 80%;
+}
+/*Contenido de circulo Archivos*/
+.contentCircleArchivos {
+  background-color: #aaa1ff;
+  width:42px;
+  height: 42px;
+  border-radius: 21px;
+  color: #8d0dfdef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentCircleArchivos svg {
+  width: 80%;
+  height: 80%;
+}
+/*Contenido de circulo Video*/
+.contentCircle {
+  background-color: #a1e9ff;
+  width:42px;
+  height: 42px;
+  border-radius: 21px;
+  color: #0dd5fde7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentCircle svg {
+  width: 90%;
+  height: 90%;
+}
+.contentRetangle {
+  background-color: #a1e4ff63;
+  width: 145px;
+  height: 42px;
+  border-radius: 21px;
+  margin-left: 5px;
+  position: relative;
+  overflow: hidden;
+}
+/* Agrega el brillo tipo skeleton */
+.contentRetangle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  animation: skeleton-loading 1.5s infinite;
+}
+/* Animación */
+@keyframes skeleton-loading {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/* Termina iconos flotantes */
+/*Responsivo*/
+@media (max-width: 1024px) {
+  .upload-area {
+    height: 250px;
+  }
+
+  .rectagleLeftFloating,
+  .rectagleRightFloating,
+  .circleLeftFloating,
+  .circleRightFloating {
+    display: none; /* Oculta elementos flotantes en pantallas medianas */
+  }
+
+  .table-profesional th,
+  .table-profesional td {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .upload-area {
+    height: 200px;
+  }
+
+  .contentCircle,
+  .contentCircleImage,
+  .contentCircleDocuments,
+  .contentCircleArchivos {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contentRetangle,
+  .contentRetangleImage {
+    width: 120px;
+    height: 35px;
+  }
+
+  .table-profesional thead {
+    display: none;
+  }
+
+  .table-profesional, 
+  .table-profesional tbody, 
+  .table-profesional tr, 
+  .table-profesional td {
+    display: block;
+    width: 100%;
+  }
+
+  .table-profesional tr {
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .table-profesional td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table-profesional td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .upload-area {
+    height: 180px;
+    font-size: 0.9rem;
+  }
+
+  #inputBuscar {
+    width: 100%;
+  }
+
+  .paginacion {
+    flex-wrap: wrap;
+  }
+}
