@@ -181,11 +181,11 @@ RESULTADOS DE LOS COMENTARIOS YA VISTOS EN UN ESQUEMA
 
 - TABLA PRODUCTOS
 <img width="1425" alt="Captura de pantalla 2025-06-26 a la(s) 12 36 49 a m" src="https://github.com/user-attachments/assets/fd5e9455-d7ca-4de8-b392-5372ae927df6" />
-<img width="1425" alt="Captura de pantalla 2025-06-26 a la(s) 12 36 49 a m" src="https://github.com/user-attachments/assets/fd5e9455-d7ca-4de8-b392-5372ae927df6" />
 
 - TABLA PROVEEDOR
 <img width="1419" alt="Captura de pantalla 2025-06-26 a la(s) 12 37 16 a m" src="https://github.com/user-attachments/assets/c282df82-6256-4121-b316-1bebc037597f" />
-<img width="1419" alt="Captura de pantalla 2025-06-26 a la(s) 12 37 16 a m" src="https://github.com/user-attachments/assets/c282df82-6256-4121-b316-1bebc037597f" />
+
+
 
 CREADO POR: JORGE A. FERNANDEZ G.
 
